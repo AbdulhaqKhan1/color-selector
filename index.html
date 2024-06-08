@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Slider</title>
+  <link rel="stylesheet" href="selector.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="holder">
+    <div id="display" class="display"></div>
+    <p id="colorDisplay">RGB(60, 86, 70, 0.5)</p>
+    
+    <div class="label">
+      <label for="red">Red:</label>
+      <input class="input" max="255" id="red" type="range" oninput="updateColor()">
+    </div>
+    
+    <div class="label">
+      <label for="green">Green:</label>
+      <input class="input" max="255" id="green" type="range" oninput="updateColor()">
+    </div>
+    
+    <div class="label">
+      <label for="blue">Blue:</label>
+      <input class="input" max="255" id="blue" type="range" oninput="updateColor()">
+    </div>
+    
+    <div class="label">
+      <label for="alpha">Alpha:</label>
+      <input class="input" max="1" id="alpha" type="range" oninput="updateColor()" step="0.0001">
+    </div> 
+    
+    <button class="copy">Copy Color</button>  
+  </div>
+  
+  <script src="selector.js"></script>
+</body>
+</html>

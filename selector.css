@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(130, 120, 230);
+}
+
+.holder{
+  background: rgb(123, 108, 229);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:10em 2em 0em 2em ;
+  color: white;
+  box-shadow: 7px 7px 5px rgba(255, 255, 255, 0.1), -5px -5px 5px rgba(8, 8, 8, 0.5);
+  text-align: center;
+}
+
+.copy{
+  border-radius: 10px;
+  border: none;
+  padding: 0.5em;
+  background: black;
+  color: white;
+  width: 30vw;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  font-family: serif;
+  font-weight: 700;
+   box-shadow: 7px 7px 5px rgba(255, 255, 255, 0.1), -5px -5px 5px rgba(7, 7, 7, 0.2);
+}
+
+.display{
+  width: 15em;
+  height: 10em;
+  background: white;
+  border-radius: 10px;
+   box-shadow: 7px 7px 5px rgba(255, 255, 255, 0.1), -5px -5px 5px rgba(7, 7, 7, 0.3);
+}
+
+.label{
+  margin: 0.8em;
+  width: 70vw;
+}
+
+input[type=range]{
+-webkit-appearance: none;
+width: 88%;
+margin-left: 10px;
+outline: none;
+background: transparent;
+cursor: grab;
+  height:5px;
+  border-radius: 5px;
+}
+
+input::-webkit-slider-runnable-track{
+background: rgba(0, 0, 0, 0.192);
+-webkit-appearance: none;
+width: 100px;
+height: 15px;
+border-radius:  19px;
+box-shadow: inset -1px -1px 3px white, inset 1px 1px 3px black;
+    background: #007bff;
+}
