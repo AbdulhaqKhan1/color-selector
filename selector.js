@@ -8,7 +8,7 @@ const colorDisplay = document.querySelector("#colorDisplay")
 
 const updateColor = () => {
   const rgbaColor = getColorCode();
-  display.colorDisplay = rgbaColor;
+  colorDisplay.innerHTML= rgbaColor;
   display.style.backgroundColor = rgbaColor;
 }
 
